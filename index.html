@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chatbot – Sitio Bilingüe (ES/FR)</title>
+  <meta name="description" content="Chatbot ligero por reglas con opción IA. Sitio bilingüe ES/FR en una sola carpeta.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Samyn Creación — Chatbot</div>
+      <nav class="lang-switch" aria-label="Selección de idioma">
+        <button class="lang-btn" data-lang="es" aria-pressed="true">ES</button>
+        <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 id="hero-title">Asistente del sitio</h1>
+      <p id="hero-sub">Responde 24/7, capta clientes y guía al usuario. Bilingüe (ES/FR).</p>
+    </section>
+
+    <section class="chat-wrapper">
+      <div class="chat" role="region" aria-live="polite" aria-label="Conversación">
+        <div id="messages" class="messages"></div>
+        <form id="chat-form" class="chat-form" autocomplete="off">
+          <input id="chat-input" class="chat-input" type="text" placeholder="Escribe tu mensaje…" aria-label="Mensaje" required>
+          <button id="send-btn" class="send-btn" type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="chat-notes">
+        <ul>
+          <li><strong>Bilingüe:</strong> usa ES o FR (botones arriba).</li>
+          <li><strong>Privacidad:</strong> este demo no guarda datos.</li>
+          <li><strong>Backend:</strong> <code>api.php</code> responde en JSON.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2 id="faq-title">Sugerencias</h2>
+      <div class="chips">
+        <button class="chip" data-ask="precio">precio</button>
+        <button class="chip" data-ask="soporte">soporte</button>
+        <button class="chip" data-ask="seo">seo</button>
+        <button class="chip" data-ask="contacto">contacto</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small id="footer-txt">Hecho con HTML, CSS, JS y PHP. Una sola carpeta.</small>
+    </div>
+  </footer>
+
+  <noscript>Este sitio necesita JavaScript para el chat.</noscript>
+  <script src="app.js"></script>
+</body>
+</html>
